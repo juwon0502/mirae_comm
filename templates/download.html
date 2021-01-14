@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="download">
+    <h1>Automatic Commission Statement</h1>
+    <form action = '/download' method = 'GET' enctype="multipart/form-data">
+        <body>Download file
+            <!-- <a href="./uploads/{{ report }}" Download> here</a> -->
+            <input type="submit" value="Download File Here">
+        </body>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action = '/finish' method = 'GET'enctype="multipart/form-data">
+        <input type='submit' value ='Finish Program'>
+    </form>
+    
+{% endblock %}

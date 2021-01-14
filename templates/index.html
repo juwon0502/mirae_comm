@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="index">
+    <h1>Automatic Commission Statement</h1>
+        <form method="POST" action = '/'>
+            <body>What quarter?<br></body>        
+                <input type="radio" name="quarter" value=1>
+                <label for="q1">1. Jan-Mar</label><br>
+                <input type="radio" name="quarter" value=2>
+                <label for="q2">2. Apr-Jun</label><br>
+                <input type="radio" name="quarter" value=3>
+                <label for="q3">3. Jul-Sep</label><br>
+                <input type="radio" name="quarter" value=4>
+                <label for="q4">4. Oct-Dec</label><br>
+            <input type = "submit">
+        </form>
+</div>
+{% endblock %}

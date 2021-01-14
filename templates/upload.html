@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="upload">
+    <h1>Automatic Commission Statement</h1>
+        <body>
+            Make sure to open and save the file before uploading into this program!
+            <br>
+            <br>
+            Please upload the three Excel files for quarter {{ quarter }} that relate to the three months in order.
+            <br>
+            <form action = "/upload" method = "POST" enctype="multipart/form-data">
+                <br>
+                <input type = "file" name="mon1" id="content">
+                    <br>
+                    <br>
+                <input type = "file" name="mon2" id="content">
+                    <br>
+                    <br>
+                <input type = "file" name="mon3" id="content">
+                    <br>
+                    <br>
+                <input type = "submit"/>
+            </form>
+        </body>
+</div>
+{% endblock %}
